@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.ict.testcases.PlOfficer_TC">
+        <methods>
+          <include name="initialization"/>
+          <include name="edit_lrnr_stat_invalid"/>
+          <include name="tearUp"/>
+          <include name="logout"/>
+          <include name="tearDown"/>
+          <include name="TearDown"/>
+        </methods>
+      </class> <!-- com.ict.testcases.PlOfficer_TC -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

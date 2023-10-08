@@ -1,0 +1,517 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>37/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Oct 07 19:30:08 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>284 seconds (284600 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.ict.testcases.PlOfficer_TC.logout()'><b>logout</b><br>Test class: com.ict.testcases.PlOfficer_TC</td>
+<td><div><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [81f7da13a98f0ccb74e2a4838ccbc471, actions {actions=[org.openqa.selenium.interactions.Sequence@1ced1fb9]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 117.0.2045.47, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:49785}, msedge: {msedgedriverVersion: 117.0.2045.55 (50f62b8a7655..., userDataDir: C:\Users\91944\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49785/devtoo..., se:cdpVersion: 117.0.2045.47, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 81f7da13a98f0ccb74e2a4838ccbc471
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:362)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:154)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:169)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$23(JsonOutput.java:169)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:182)
+	at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:68)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$25(JsonOutput.java:177)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:278)
+	at org.openqa.selenium.json.Json.toJson(Json.java:42)
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:259)
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:122)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:611)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:567)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:536)
+	at org.ict.pages.PlOfficer.log_out(PlOfficer.java:119)
+	at com.ict.testcases.PlOfficer_TC.logout(PlOfficer_TC.java:120)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: driver.version: RemoteWebDriver
+		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:303)
+		at org.openqa.selenium.json.Json.toJson(Json.java:40)
+		... 39 more
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:358)
+	... 60 more
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#basic\-nav\-dropdown&quot;}
+  (Session info: MicrosoftEdge=117.0.2045.47)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [81f7da13a98f0ccb74e2a4838ccbc471, findElement {using=id, value=basic-nav-dropdown}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 117.0.2045.47, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:49785}, msedge: {msedgedriverVersion: 117.0.2045.55 (50f62b8a7655..., userDataDir: C:\Users\91944\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49785/devtoo..., se:cdpVersion: 117.0.2045.47, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 81f7da13a98f0ccb74e2a4838ccbc471
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:269)
+	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:218)
+	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:73)
+	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:82)
+	... 65 more
+... Removed 37 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace271044045", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace271044045'><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [81f7da13a98f0ccb74e2a4838ccbc471, actions {actions=[org.openqa.selenium.interactions.Sequence@1ced1fb9]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 117.0.2045.47, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:49785}, msedge: {msedgedriverVersion: 117.0.2045.55 (50f62b8a7655..., userDataDir: C:\Users\91944\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49785/devtoo..., se:cdpVersion: 117.0.2045.47, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 81f7da13a98f0ccb74e2a4838ccbc471
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:362)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:154)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:169)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$23(JsonOutput.java:169)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:182)
+	at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:68)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$25(JsonOutput.java:177)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:278)
+	at org.openqa.selenium.json.Json.toJson(Json.java:42)
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:259)
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:122)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:611)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:567)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:536)
+	at org.ict.pages.PlOfficer.log_out(PlOfficer.java:119)
+	at com.ict.testcases.PlOfficer_TC.logout(PlOfficer_TC.java:120)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: driver.version: RemoteWebDriver
+		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:303)
+		at org.openqa.selenium.json.Json.toJson(Json.java:40)
+		... 39 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:358)
+	... 60 more
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#basic\-nav\-dropdown&quot;}
+  (Session info: MicrosoftEdge=117.0.2045.47)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [81f7da13a98f0ccb74e2a4838ccbc471, findElement {using=id, value=basic-nav-dropdown}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 117.0.2045.47, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:49785}, msedge: {msedgedriverVersion: 117.0.2045.55 (50f62b8a7655..., userDataDir: C:\Users\91944\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49785/devtoo..., se:cdpVersion: 117.0.2045.47, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 81f7da13a98f0ccb74e2a4838ccbc471
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:269)
+	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:218)
+	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:73)
+	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:82)
+	... 65 more
+</pre></div></td>
+<td>8</td>
+<td>com.ict.testcases.PlOfficer_TC@4e08711f</td></tr>
+<tr>
+<td title='com.ict.testcases.PlOfficer_TC.edit_lrnr_stat_invalid()'><b>edit_lrnr_stat_invalid</b><br>Test class: com.ict.testcases.PlOfficer_TC</td>
+<td><div><pre>java.lang.AssertionError: did not expect [-Select-] but found [-Select-]
+	at com.ict.testcases.PlOfficer_TC.edit_lrnr_stat_invalid(PlOfficer_TC.java:96)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1371550829", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1371550829'><pre>java.lang.AssertionError: did not expect [-Select-] but found [-Select-]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failEquals(Assert.java:1582)
+	at org.testng.Assert.assertNotEqualsImpl(Assert.java:157)
+	at org.testng.Assert.assertNotEquals(Assert.java:2198)
+	at org.testng.Assert.assertNotEquals(Assert.java:2220)
+	at com.ict.testcases.PlOfficer_TC.edit_lrnr_stat_invalid(PlOfficer_TC.java:96)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>2</td>
+<td>com.ict.testcases.PlOfficer_TC@4e08711f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.ict.testcases.Trainer_TC.check_blank_upload()'><b>check_blank_upload</b><br>Test class: com.ict.testcases.Trainer_TC</td>
+<td></td>
+<td>2</td>
+<td>com.ict.testcases.Trainer_TC@4b2bac3f</td></tr>
+<tr>
+<td title='com.ict.testcases.LoginTC.check_invalid_loginPwd()'><b>check_invalid_loginPwd</b><br>Test class: com.ict.testcases.LoginTC</td>
+<td></td>
+<td>0</td>
+<td>com.ict.testcases.LoginTC@31190526</td></tr>
+<tr>
+<td title='com.ict.testcases.LoginTC.verify_trainer_login()'><b>verify_trainer_login</b><br>Test class: com.ict.testcases.LoginTC</td>
+<td></td>
+<td>0</td>
+<td>com.ict.testcases.LoginTC@31190526</td></tr>
+<tr>
+<td title='com.ict.testcases.Admin_DashboardTC.add_new_lrnr()'><b>add_new_lrnr</b><br>Test class: com.ict.testcases.Admin_DashboardTC</td>
+<td></td>
+<td>1</td>
+<td>com.ict.testcases.Admin_DashboardTC@4d1c00d0</td></tr>
+<tr>
+<td title='com.ict.testcases.Admin_DashboardTC.logout()'><b>logout</b><br>Test class: com.ict.testcases.Admin_DashboardTC</td>
+<td></td>
+<td>2</td>
+<td>com.ict.testcases.Admin_DashboardTC@4d1c00d0</td></tr>
+<tr>
+<td title='com.ict.testcases.Trainer_TC.choose_csv_file()'><b>choose_csv_file</b><br>Test class: com.ict.testcases.Trainer_TC</td>
+<td></td>
+<td>2</td>
+<td>com.ict.testcases.Trainer_TC@4b2bac3f</td></tr>
+<tr>
+<td title='com.ict.testcases.Trainer_TC.chk_previous_nav()'><b>chk_previous_nav</b><br>Test class: com.ict.testcases.Trainer_TC</td>
+<td></td>
+<td>3</td>
+<td>com.ict.testcases.Trainer_TC@4b2bac3f</td></tr>
+<tr>
+<td title='com.ict.testcases.Admin_DashboardTC.edit_user_pwd()'><b>edit_user_pwd</b><br>Test class: com.ict.testcases.Admin_DashboardTC</td>
+<td></td>
+<td>6</td>
+<td>com.ict.testcases.Admin_DashboardTC@4d1c00d0</td></tr>
+<tr>
+<td title='com.ict.testcases.LoginTC.verify_officer_login()'><b>verify_officer_login</b><br>Test class: com.ict.testcases.LoginTC</td>
+<td></td>
+<td>0</td>
+<td>com.ict.testcases.LoginTC@31190526</td></tr>
+<tr>
+<td title='com.ict.testcases.PlOfficer_TC.show_learners()'><b>show_learners</b><br>Test class: com.ict.testcases.PlOfficer_TC</td>
+<td></td>
+<td>2</td>
+<td>com.ict.testcases.PlOfficer_TC@4e08711f</td></tr>
+<tr>
+<td title='com.ict.testcases.Admin_DashboardTC.add_new_user_invalid()'><b>add_new_user_invalid</b><br>Test class: com.ict.testcases.Admin_DashboardTC</td>
+<td></td>
+<td>1</td>
+<td>com.ict.testcases.Admin_DashboardTC@4d1c00d0</td></tr>
+<tr>
+<td title='com.ict.testcases.Admin_DashboardTC.show_learners_in_plc()'><b>show_learners_in_plc</b><br>Test class: com.ict.testcases.Admin_DashboardTC</td>
+<td></td>
+<td>1</td>
+<td>com.ict.testcases.Admin_DashboardTC@4d1c00d0</td></tr>
+<tr>
+<td title='com.ict.testcases.Admin_DashboardTC.check_LnrPrevious_btn()'><b>check_LnrPrevious_btn</b><br>Test class: com.ict.testcases.Admin_DashboardTC</td>
+<td></td>
+<td>3</td>
+<td>com.ict.testcases.Admin_DashboardTC@4d1c00d0</td></tr>
+<tr>
+<td title='com.ict.testcases.Trainer_TC.go_to_upload_page()'><b>go_to_upload_page</b><br>Test class: com.ict.testcases.Trainer_TC</td>
+<td></td>
+<td>0</td>
+<td>com.ict.testcases.Trainer_TC@4b2bac3f</td></tr>
+<tr>
+<td title='com.ict.testcases.Trainer_TC.show_learners()'><b>show_learners</b><br>Test class: com.ict.testcases.Trainer_TC</td>
+<td></td>
+<td>1</td>
+<td>com.ict.testcases.Trainer_TC@4b2bac3f</td></tr>
+<tr>
+<td title='com.ict.testcases.Admin_DashboardTC.disp_learners()'><b>disp_learners</b><br>Test class: com.ict.testcases.Admin_DashboardTC</td>
+<td></td>
+<td>2</td>
+<td>com.ict.testcases.Admin_DashboardTC@4d1c00d0</td></tr>
+<tr>
+<td title='com.ict.testcases.Trainer_TC.edit_lrnr_crs()'><b>edit_lrnr_crs</b><br>Test class: com.ict.testcases.Trainer_TC</td>
+<td></td>
+<td>5</td>
+<td>com.ict.testcases.Trainer_TC@4b2bac3f</td></tr>
+<tr>
+<td title='com.ict.testcases.PlOfficer_TC.check_previous_btn()'><b>check_previous_btn</b><br>Test class: com.ict.testcases.PlOfficer_TC</td>
+<td></td>
+<td>4</td>
+<td>com.ict.testcases.PlOfficer_TC@4e08711f</td></tr>
+<tr>
+<td title='com.ict.testcases.Trainer_TC.delete_learner()'><b>delete_learner</b><br>Test class: com.ict.testcases.Trainer_TC</td>
+<td></td>
+<td>3</td>
+<td>com.ict.testcases.Trainer_TC@4b2bac3f</td></tr>
+<tr>
+<td title='com.ict.testcases.PlOfficer_TC.edit_lrnr_status()'><b>edit_lrnr_status</b><br>Test class: com.ict.testcases.PlOfficer_TC</td>
+<td></td>
+<td>3</td>
+<td>com.ict.testcases.PlOfficer_TC@4e08711f</td></tr>
+<tr>
+<td title='com.ict.testcases.Admin_DashboardTC.add_new_user()'><b>add_new_user</b><br>Test class: com.ict.testcases.Admin_DashboardTC</td>
+<td></td>
+<td>2</td>
+<td>com.ict.testcases.Admin_DashboardTC@4d1c00d0</td></tr>
+<tr>
+<td title='com.ict.testcases.Admin_DashboardTC.edit_lrnrpstatus_in_plc()'><b>edit_lrnrpstatus_in_plc</b><br>Test class: com.ict.testcases.Admin_DashboardTC</td>
+<td></td>
+<td>4</td>
+<td>com.ict.testcases.Admin_DashboardTC@4d1c00d0</td></tr>
+<tr>
+<td title='com.ict.testcases.Admin_DashboardTC.delete_learner()'><b>delete_learner</b><br>Test class: com.ict.testcases.Admin_DashboardTC</td>
+<td></td>
+<td>4</td>
+<td>com.ict.testcases.Admin_DashboardTC@4d1c00d0</td></tr>
+<tr>
+<td title='com.ict.testcases.Trainer_TC.dwnload_csv()'><b>dwnload_csv</b><br>Test class: com.ict.testcases.Trainer_TC</td>
+<td></td>
+<td>3</td>
+<td>com.ict.testcases.Trainer_TC@4b2bac3f</td></tr>
+<tr>
+<td title='com.ict.testcases.Admin_DashboardTC.add_learner()'><b>add_learner</b><br>Test class: com.ict.testcases.Admin_DashboardTC</td>
+<td></td>
+<td>2</td>
+<td>com.ict.testcases.Admin_DashboardTC@4d1c00d0</td></tr>
+<tr>
+<td title='com.ict.testcases.Admin_DashboardTC.choose_csv()'><b>choose_csv</b><br>Test class: com.ict.testcases.Admin_DashboardTC</td>
+<td></td>
+<td>2</td>
+<td>com.ict.testcases.Admin_DashboardTC@4d1c00d0</td></tr>
+<tr>
+<td title='com.ict.testcases.LoginTC.check_invalid_login()'><b>check_invalid_login</b><br>Test class: com.ict.testcases.LoginTC</td>
+<td></td>
+<td>1</td>
+<td>com.ict.testcases.LoginTC@31190526</td></tr>
+<tr>
+<td title='com.ict.testcases.Admin_DashboardTC.display_all_users()'><b>display_all_users</b><br>Test class: com.ict.testcases.Admin_DashboardTC</td>
+<td></td>
+<td>1</td>
+<td>com.ict.testcases.Admin_DashboardTC@4d1c00d0</td></tr>
+<tr>
+<td title='com.ict.testcases.Trainer_TC.edit_lrnr_proj()'><b>edit_lrnr_proj</b><br>Test class: com.ict.testcases.Trainer_TC</td>
+<td></td>
+<td>5</td>
+<td>com.ict.testcases.Trainer_TC@4b2bac3f</td></tr>
+<tr>
+<td title='com.ict.testcases.Trainer_TC.cancel_file_upld()'><b>cancel_file_upld</b><br>Test class: com.ict.testcases.Trainer_TC</td>
+<td></td>
+<td>3</td>
+<td>com.ict.testcases.Trainer_TC@4b2bac3f</td></tr>
+<tr>
+<td title='com.ict.testcases.Admin_DashboardTC.csv_file_upload()'><b>csv_file_upload</b><br>Test class: com.ict.testcases.Admin_DashboardTC</td>
+<td></td>
+<td>1</td>
+<td>com.ict.testcases.Admin_DashboardTC@4d1c00d0</td></tr>
+<tr>
+<td title='com.ict.testcases.LoginTC.verify_admin_login()'><b>verify_admin_login</b><br>Test class: com.ict.testcases.LoginTC</td>
+<td></td>
+<td>1</td>
+<td>com.ict.testcases.LoginTC@31190526</td></tr>
+<tr>
+<td title='com.ict.testcases.Admin_DashboardTC.delete_user()'><b>delete_user</b><br>Test class: com.ict.testcases.Admin_DashboardTC</td>
+<td></td>
+<td>3</td>
+<td>com.ict.testcases.Admin_DashboardTC@4d1c00d0</td></tr>
+<tr>
+<td title='com.ict.testcases.Trainer_TC.add_new_learner()'><b>add_new_learner</b><br>Test class: com.ict.testcases.Trainer_TC</td>
+<td></td>
+<td>1</td>
+<td>com.ict.testcases.Trainer_TC@4b2bac3f</td></tr>
+<tr>
+<td title='com.ict.testcases.Trainer_TC.add_new_learnr()'><b>add_new_learnr</b><br>Test class: com.ict.testcases.Trainer_TC</td>
+<td></td>
+<td>1</td>
+<td>com.ict.testcases.Trainer_TC@4b2bac3f</td></tr>
+<tr>
+<td title='com.ict.testcases.Admin_DashboardTC.edit_lrnr_project()'><b>edit_lrnr_project</b><br>Test class: com.ict.testcases.Admin_DashboardTC</td>
+<td></td>
+<td>5</td>
+<td>com.ict.testcases.Admin_DashboardTC@4d1c00d0</td></tr>
+<tr>
+<td title='com.ict.testcases.Trainer_TC.logout()'><b>logout</b><br>Test class: com.ict.testcases.Trainer_TC</td>
+<td></td>
+<td>2</td>
+<td>com.ict.testcases.Trainer_TC@4b2bac3f</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,1632 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>D:\JAVA_TRAINING\LearnerTracker\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">39 methods, 2 failed,   37 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ict.testcases.PlOfficer_TC" class="method navigator-link" hash-for-method="edit_lrnr_stat_invalid">edit_lrnr_stat_invalid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ict.testcases.PlOfficer_TC" class="method navigator-link" hash-for-method="logout">logout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ict.testcases.Admin_DashboardTC" class="method navigator-link" hash-for-method="add_learner">add_learner</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ict.testcases.Trainer_TC" class="method navigator-link" hash-for-method="add_new_learner">add_new_learner</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ict.testcases.Trainer_TC" class="method navigator-link" hash-for-method="add_new_learnr">add_new_learnr</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ict.testcases.Admin_DashboardTC" class="method navigator-link" hash-for-method="add_new_lrnr">add_new_lrnr</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ict.testcases.Admin_DashboardTC" class="method navigator-link" hash-for-method="add_new_user">add_new_user</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ict.testcases.Admin_DashboardTC" class="method navigator-link" hash-for-method="add_new_user_invalid">add_new_user_invalid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ict.testcases.Trainer_TC" class="method navigator-link" hash-for-method="cancel_file_upld">cancel_file_upld</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ict.testcases.Admin_DashboardTC" class="method navigator-link" hash-for-method="check_LnrPrevious_btn">check_LnrPrevious_btn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ict.testcases.Trainer_TC" class="method navigator-link" hash-for-method="check_blank_upload">check_blank_upload</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ict.testcases.LoginTC" class="method navigator-link" hash-for-method="check_invalid_login">check_invalid_login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ict.testcases.LoginTC" class="method navigator-link" hash-for-method="check_invalid_loginPwd">check_invalid_loginPwd</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ict.testcases.PlOfficer_TC" class="method navigator-link" hash-for-method="check_previous_btn">check_previous_btn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ict.testcases.Trainer_TC" class="method navigator-link" hash-for-method="chk_previous_nav">chk_previous_nav</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ict.testcases.Admin_DashboardTC" class="method navigator-link" hash-for-method="choose_csv">choose_csv</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ict.testcases.Trainer_TC" class="method navigator-link" hash-for-method="choose_csv_file">choose_csv_file</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ict.testcases.Admin_DashboardTC" class="method navigator-link" hash-for-method="csv_file_upload">csv_file_upload</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ict.testcases.Trainer_TC" class="method navigator-link" hash-for-method="delete_learner">delete_learner</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ict.testcases.Admin_DashboardTC" class="method navigator-link" hash-for-method="delete_learner">delete_learner</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ict.testcases.Admin_DashboardTC" class="method navigator-link" hash-for-method="delete_user">delete_user</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ict.testcases.Admin_DashboardTC" class="method navigator-link" hash-for-method="disp_learners">disp_learners</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ict.testcases.Admin_DashboardTC" class="method navigator-link" hash-for-method="display_all_users">display_all_users</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ict.testcases.Trainer_TC" class="method navigator-link" hash-for-method="dwnload_csv">dwnload_csv</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ict.testcases.Trainer_TC" class="method navigator-link" hash-for-method="edit_lrnr_crs">edit_lrnr_crs</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ict.testcases.Trainer_TC" class="method navigator-link" hash-for-method="edit_lrnr_proj">edit_lrnr_proj</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ict.testcases.Admin_DashboardTC" class="method navigator-link" hash-for-method="edit_lrnr_project">edit_lrnr_project</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ict.testcases.PlOfficer_TC" class="method navigator-link" hash-for-method="edit_lrnr_status">edit_lrnr_status</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ict.testcases.Admin_DashboardTC" class="method navigator-link" hash-for-method="edit_lrnrpstatus_in_plc">edit_lrnrpstatus_in_plc</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ict.testcases.Admin_DashboardTC" class="method navigator-link" hash-for-method="edit_user_pwd">edit_user_pwd</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ict.testcases.Trainer_TC" class="method navigator-link" hash-for-method="go_to_upload_page">go_to_upload_page</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ict.testcases.Admin_DashboardTC" class="method navigator-link" hash-for-method="logout">logout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ict.testcases.Trainer_TC" class="method navigator-link" hash-for-method="logout">logout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ict.testcases.PlOfficer_TC" class="method navigator-link" hash-for-method="show_learners">show_learners</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ict.testcases.Trainer_TC" class="method navigator-link" hash-for-method="show_learners">show_learners</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ict.testcases.Admin_DashboardTC" class="method navigator-link" hash-for-method="show_learners_in_plc">show_learners_in_plc</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ict.testcases.LoginTC" class="method navigator-link" hash-for-method="verify_admin_login">verify_admin_login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ict.testcases.LoginTC" class="method navigator-link" hash-for-method="verify_officer_login">verify_officer_login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ict.testcases.LoginTC" class="method navigator-link" hash-for-method="verify_trainer_login">verify_trainer_login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.ict.testcases.PlOfficer_TC</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="edit_lrnr_stat_invalid">
+                  </a> <!-- edit_lrnr_stat_invalid -->
+                  <span class="method-name">edit_lrnr_stat_invalid</span>
+                  <div class="stack-trace">java.lang.AssertionError: did not expect [-Select-] but found [-Select-]
+	at com.ict.testcases.PlOfficer_TC.edit_lrnr_stat_invalid(PlOfficer_TC.java:96)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logout">
+                  </a> <!-- logout -->
+                  <span class="method-name">logout</span>
+                  <div class="stack-trace">org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [81f7da13a98f0ccb74e2a4838ccbc471, actions {actions=[org.openqa.selenium.interactions.Sequence@1ced1fb9]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 117.0.2045.47, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:49785}, msedge: {msedgedriverVersion: 117.0.2045.55 (50f62b8a7655..., userDataDir: C:\Users\91944\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49785/devtoo..., se:cdpVersion: 117.0.2045.47, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 81f7da13a98f0ccb74e2a4838ccbc471
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:362)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:154)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:169)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$23(JsonOutput.java:169)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:182)
+	at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:68)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$25(JsonOutput.java:177)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:278)
+	at org.openqa.selenium.json.Json.toJson(Json.java:42)
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:259)
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:122)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:611)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:567)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:536)
+	at org.ict.pages.PlOfficer.log_out(PlOfficer.java:119)
+	at com.ict.testcases.PlOfficer_TC.logout(PlOfficer_TC.java:120)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: driver.version: RemoteWebDriver
+		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:303)
+		at org.openqa.selenium.json.Json.toJson(Json.java:40)
+		... 39 more
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:358)
+	... 60 more
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#basic\-nav\-dropdown&quot;}
+  (Session info: MicrosoftEdge=117.0.2045.47)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [81f7da13a98f0ccb74e2a4838ccbc471, findElement {using=id, value=basic-nav-dropdown}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 117.0.2045.47, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:49785}, msedge: {msedgedriverVersion: 117.0.2045.55 (50f62b8a7655..., userDataDir: C:\Users\91944\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49785/devtoo..., se:cdpVersion: 117.0.2045.47, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 81f7da13a98f0ccb74e2a4838ccbc471
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:269)
+	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:218)
+	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:73)
+	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:82)
+	... 65 more
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ict.testcases.PlOfficer_TC</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="check_previous_btn">
+                  </a> <!-- check_previous_btn -->
+                  <span class="method-name">check_previous_btn</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="edit_lrnr_status">
+                  </a> <!-- edit_lrnr_status -->
+                  <span class="method-name">edit_lrnr_status</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="show_learners">
+                  </a> <!-- show_learners -->
+                  <span class="method-name">show_learners</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ict.testcases.LoginTC</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="check_invalid_login">
+                  </a> <!-- check_invalid_login -->
+                  <span class="method-name">check_invalid_login</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="check_invalid_loginPwd">
+                  </a> <!-- check_invalid_loginPwd -->
+                  <span class="method-name">check_invalid_loginPwd</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_admin_login">
+                  </a> <!-- verify_admin_login -->
+                  <span class="method-name">verify_admin_login</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_officer_login">
+                  </a> <!-- verify_officer_login -->
+                  <span class="method-name">verify_officer_login</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_trainer_login">
+                  </a> <!-- verify_trainer_login -->
+                  <span class="method-name">verify_trainer_login</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ict.testcases.Admin_DashboardTC</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="add_learner">
+                  </a> <!-- add_learner -->
+                  <span class="method-name">add_learner</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="add_new_lrnr">
+                  </a> <!-- add_new_lrnr -->
+                  <span class="method-name">add_new_lrnr</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="add_new_user">
+                  </a> <!-- add_new_user -->
+                  <span class="method-name">add_new_user</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="add_new_user_invalid">
+                  </a> <!-- add_new_user_invalid -->
+                  <span class="method-name">add_new_user_invalid</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="check_LnrPrevious_btn">
+                  </a> <!-- check_LnrPrevious_btn -->
+                  <span class="method-name">check_LnrPrevious_btn</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="choose_csv">
+                  </a> <!-- choose_csv -->
+                  <span class="method-name">choose_csv</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="csv_file_upload">
+                  </a> <!-- csv_file_upload -->
+                  <span class="method-name">csv_file_upload</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="delete_learner">
+                  </a> <!-- delete_learner -->
+                  <span class="method-name">delete_learner</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="delete_user">
+                  </a> <!-- delete_user -->
+                  <span class="method-name">delete_user</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="disp_learners">
+                  </a> <!-- disp_learners -->
+                  <span class="method-name">disp_learners</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="display_all_users">
+                  </a> <!-- display_all_users -->
+                  <span class="method-name">display_all_users</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="edit_lrnr_project">
+                  </a> <!-- edit_lrnr_project -->
+                  <span class="method-name">edit_lrnr_project</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="edit_lrnrpstatus_in_plc">
+                  </a> <!-- edit_lrnrpstatus_in_plc -->
+                  <span class="method-name">edit_lrnrpstatus_in_plc</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="edit_user_pwd">
+                  </a> <!-- edit_user_pwd -->
+                  <span class="method-name">edit_user_pwd</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logout">
+                  </a> <!-- logout -->
+                  <span class="method-name">logout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="show_learners_in_plc">
+                  </a> <!-- show_learners_in_plc -->
+                  <span class="method-name">show_learners_in_plc</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ict.testcases.Trainer_TC</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="add_new_learner">
+                  </a> <!-- add_new_learner -->
+                  <span class="method-name">add_new_learner</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="add_new_learnr">
+                  </a> <!-- add_new_learnr -->
+                  <span class="method-name">add_new_learnr</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="cancel_file_upld">
+                  </a> <!-- cancel_file_upld -->
+                  <span class="method-name">cancel_file_upld</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="check_blank_upload">
+                  </a> <!-- check_blank_upload -->
+                  <span class="method-name">check_blank_upload</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="chk_previous_nav">
+                  </a> <!-- chk_previous_nav -->
+                  <span class="method-name">chk_previous_nav</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="choose_csv_file">
+                  </a> <!-- choose_csv_file -->
+                  <span class="method-name">choose_csv_file</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="delete_learner">
+                  </a> <!-- delete_learner -->
+                  <span class="method-name">delete_learner</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dwnload_csv">
+                  </a> <!-- dwnload_csv -->
+                  <span class="method-name">dwnload_csv</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="edit_lrnr_crs">
+                  </a> <!-- edit_lrnr_crs -->
+                  <span class="method-name">edit_lrnr_crs</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="edit_lrnr_proj">
+                  </a> <!-- edit_lrnr_proj -->
+                  <span class="method-name">edit_lrnr_proj</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="go_to_upload_page">
+                  </a> <!-- go_to_upload_page -->
+                  <span class="method-name">go_to_upload_page</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logout">
+                  </a> <!-- logout -->
+                  <span class="method-name">logout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="show_learners">
+                  </a> <!-- show_learners -->
+                  <span class="method-name">show_learners</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\JAVA_TRAINING\LearnerTracker\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.ict.testcases.LoginTC&quot;/&gt;
+      &lt;class name=&quot;com.ict.testcases.Admin_DashboardTC&quot;/&gt;
+      &lt;class name=&quot;com.ict.testcases.Trainer_TC&quot;/&gt;
+      &lt;class name=&quot;com.ict.testcases.PlOfficer_TC&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (4 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(39);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'logout')
+data.setCell(0, 2, 'com.ict.testcases.PlOfficer_TC')
+data.setCell(0, 3, 8079);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'edit_user_pwd')
+data.setCell(1, 2, 'com.ict.testcases.Admin_DashboardTC')
+data.setCell(1, 3, 6479);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'edit_lrnr_crs')
+data.setCell(2, 2, 'com.ict.testcases.Trainer_TC')
+data.setCell(2, 3, 5470);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'edit_lrnr_project')
+data.setCell(3, 2, 'com.ict.testcases.Admin_DashboardTC')
+data.setCell(3, 3, 5420);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'edit_lrnr_proj')
+data.setCell(4, 2, 'com.ict.testcases.Trainer_TC')
+data.setCell(4, 3, 5026);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'edit_lrnrpstatus_in_plc')
+data.setCell(5, 2, 'com.ict.testcases.Admin_DashboardTC')
+data.setCell(5, 3, 4663);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'check_previous_btn')
+data.setCell(6, 2, 'com.ict.testcases.PlOfficer_TC')
+data.setCell(6, 3, 4033);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'delete_learner')
+data.setCell(7, 2, 'com.ict.testcases.Admin_DashboardTC')
+data.setCell(7, 3, 4020);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'check_LnrPrevious_btn')
+data.setCell(8, 2, 'com.ict.testcases.Admin_DashboardTC')
+data.setCell(8, 3, 3945);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'delete_user')
+data.setCell(9, 2, 'com.ict.testcases.Admin_DashboardTC')
+data.setCell(9, 3, 3770);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'delete_learner')
+data.setCell(10, 2, 'com.ict.testcases.Trainer_TC')
+data.setCell(10, 3, 3733);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'cancel_file_upld')
+data.setCell(11, 2, 'com.ict.testcases.Trainer_TC')
+data.setCell(11, 3, 3606);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'dwnload_csv')
+data.setCell(12, 2, 'com.ict.testcases.Trainer_TC')
+data.setCell(12, 3, 3577);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'edit_lrnr_status')
+data.setCell(13, 2, 'com.ict.testcases.PlOfficer_TC')
+data.setCell(13, 3, 3415);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'chk_previous_nav')
+data.setCell(14, 2, 'com.ict.testcases.Trainer_TC')
+data.setCell(14, 3, 3241);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'show_learners')
+data.setCell(15, 2, 'com.ict.testcases.PlOfficer_TC')
+data.setCell(15, 3, 2926);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'choose_csv')
+data.setCell(16, 2, 'com.ict.testcases.Admin_DashboardTC')
+data.setCell(16, 3, 2734);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'add_new_user')
+data.setCell(17, 2, 'com.ict.testcases.Admin_DashboardTC')
+data.setCell(17, 3, 2732);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'check_blank_upload')
+data.setCell(18, 2, 'com.ict.testcases.Trainer_TC')
+data.setCell(18, 3, 2640);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'add_learner')
+data.setCell(19, 2, 'com.ict.testcases.Admin_DashboardTC')
+data.setCell(19, 3, 2439);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'logout')
+data.setCell(20, 2, 'com.ict.testcases.Admin_DashboardTC')
+data.setCell(20, 3, 2400);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'edit_lrnr_stat_invalid')
+data.setCell(21, 2, 'com.ict.testcases.PlOfficer_TC')
+data.setCell(21, 3, 2346);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'logout')
+data.setCell(22, 2, 'com.ict.testcases.Trainer_TC')
+data.setCell(22, 3, 2318);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'choose_csv_file')
+data.setCell(23, 2, 'com.ict.testcases.Trainer_TC')
+data.setCell(23, 3, 2236);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'disp_learners')
+data.setCell(24, 2, 'com.ict.testcases.Admin_DashboardTC')
+data.setCell(24, 3, 2217);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'add_new_learner')
+data.setCell(25, 2, 'com.ict.testcases.Trainer_TC')
+data.setCell(25, 3, 1854);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'show_learners_in_plc')
+data.setCell(26, 2, 'com.ict.testcases.Admin_DashboardTC')
+data.setCell(26, 3, 1835);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'show_learners')
+data.setCell(27, 2, 'com.ict.testcases.Trainer_TC')
+data.setCell(27, 3, 1818);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'add_new_user_invalid')
+data.setCell(28, 2, 'com.ict.testcases.Admin_DashboardTC')
+data.setCell(28, 3, 1804);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'display_all_users')
+data.setCell(29, 2, 'com.ict.testcases.Admin_DashboardTC')
+data.setCell(29, 3, 1532);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'verify_admin_login')
+data.setCell(30, 2, 'com.ict.testcases.LoginTC')
+data.setCell(30, 3, 1417);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'csv_file_upload')
+data.setCell(31, 2, 'com.ict.testcases.Admin_DashboardTC')
+data.setCell(31, 3, 1273);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'add_new_learnr')
+data.setCell(32, 2, 'com.ict.testcases.Trainer_TC')
+data.setCell(32, 3, 1199);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'check_invalid_login')
+data.setCell(33, 2, 'com.ict.testcases.LoginTC')
+data.setCell(33, 3, 1155);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'add_new_lrnr')
+data.setCell(34, 2, 'com.ict.testcases.Admin_DashboardTC')
+data.setCell(34, 3, 1063);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'verify_officer_login')
+data.setCell(35, 2, 'com.ict.testcases.LoginTC')
+data.setCell(35, 3, 971);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'verify_trainer_login')
+data.setCell(36, 2, 'com.ict.testcases.LoginTC')
+data.setCell(36, 3, 949);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'check_invalid_loginPwd')
+data.setCell(37, 2, 'com.ict.testcases.LoginTC')
+data.setCell(37, 3, 905);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'go_to_upload_page')
+data.setCell(38, 2, 'com.ict.testcases.Trainer_TC')
+data.setCell(38, 3, 753);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">3 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.ict.testcases.PlOfficer_TC</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">TearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.ict.testcases.Admin_DashboardTC</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">TearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.ict.testcases.Trainer_TC</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">TearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ict.testcases.LoginTC</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">tearUp</span>
+                <span class="method-start">4366 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">check_invalid_login</span>
+                <span class="method-start">4389 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">5547 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization</span>
+                <span class="method-start">5716 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">tearUp</span>
+                <span class="method-start">9136 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">check_invalid_loginPwd</span>
+                <span class="method-start">9138 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">10044 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization</span>
+                <span class="method-start">10185 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">tearUp</span>
+                <span class="method-start">13592 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verify_admin_login</span>
+                <span class="method-start">13594 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">15012 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization</span>
+                <span class="method-start">15179 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">tearUp</span>
+                <span class="method-start">18637 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verify_trainer_login</span>
+                <span class="method-start">18638 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">19588 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization</span>
+                <span class="method-start">19774 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">tearUp</span>
+                <span class="method-start">23190 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verify_officer_login</span>
+                <span class="method-start">23191 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">24163 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ict.testcases.Admin_DashboardTC</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization</span>
+                <span class="method-start">24288 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">tearUp</span>
+                <span class="method-start">27681 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">display_all_users</span>
+                <span class="method-start">27954 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">29487 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization</span>
+                <span class="method-start">29634 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">tearUp</span>
+                <span class="method-start">33169 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">add_new_user</span>
+                <span class="method-start">33431 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">36164 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization</span>
+                <span class="method-start">36337 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">tearUp</span>
+                <span class="method-start">40742 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">add_new_user_invalid</span>
+                <span class="method-start">41037 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">42842 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization</span>
+                <span class="method-start">43024 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">tearUp</span>
+                <span class="method-start">46450 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">edit_user_pwd</span>
+                <span class="method-start">46697 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">53177 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization</span>
+                <span class="method-start">53340 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">tearUp</span>
+                <span class="method-start">57233 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">logout</span>
+                <span class="method-start">57460 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">59860 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization</span>
+                <span class="method-start">60017 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">tearUp</span>
+                <span class="method-start">63411 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">delete_user</span>
+                <span class="method-start">63666 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">67437 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization</span>
+                <span class="method-start">67575 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">tearUp</span>
+                <span class="method-start">93099 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">disp_learners</span>
+                <span class="method-start">93369 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">95587 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization</span>
+                <span class="method-start">95748 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">tearUp</span>
+                <span class="method-start">99124 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">add_learner</span>
+                <span class="method-start">99354 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">101794 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization</span>
+                <span class="method-start">101946 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">tearUp</span>
+                <span class="method-start">105404 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">add_new_lrnr</span>
+                <span class="method-start">105713 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">106777 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization</span>
+                <span class="method-start">106928 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">tearUp</span>
+                <span class="method-start">110384 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">csv_file_upload</span>
+                <span class="method-start">110678 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">111951 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization</span>
+                <span class="method-start">112121 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">tearUp</span>
+                <span class="method-start">115518 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">choose_csv</span>
+                <span class="method-start">115781 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">118515 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization</span>
+                <span class="method-start">118673 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">tearUp</span>
+                <span class="method-start">122136 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">edit_lrnr_project</span>
+                <span class="method-start">122373 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">127793 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization</span>
+                <span class="method-start">127950 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">tearUp</span>
+                <span class="method-start">131339 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">delete_learner</span>
+                <span class="method-start">131586 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">135606 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization</span>
+                <span class="method-start">135819 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">tearUp</span>
+                <span class="method-start">139226 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">check_LnrPrevious_btn</span>
+                <span class="method-start">139458 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">143403 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization</span>
+                <span class="method-start">143600 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">tearUp</span>
+                <span class="method-start">147054 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">show_learners_in_plc</span>
+                <span class="method-start">147273 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">149109 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization</span>
+                <span class="method-start">149252 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">tearUp</span>
+                <span class="method-start">152604 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">edit_lrnrpstatus_in_plc</span>
+                <span class="method-start">152867 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">157531 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ict.testcases.Trainer_TC</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization</span>
+                <span class="method-start">157699 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">tearUp</span>
+                <span class="method-start">161100 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">show_learners</span>
+                <span class="method-start">161342 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">163161 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization</span>
+                <span class="method-start">163356 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">tearUp</span>
+                <span class="method-start">166737 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">add_new_learner</span>
+                <span class="method-start">166981 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">168836 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization</span>
+                <span class="method-start">169000 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">tearUp</span>
+                <span class="method-start">172406 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">add_new_learnr</span>
+                <span class="method-start">172650 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">173850 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization</span>
+                <span class="method-start">173991 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">tearUp</span>
+                <span class="method-start">177397 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">go_to_upload_page</span>
+                <span class="method-start">177634 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">178387 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization</span>
+                <span class="method-start">178527 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">tearUp</span>
+                <span class="method-start">181977 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">choose_csv_file</span>
+                <span class="method-start">182200 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">184437 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization</span>
+                <span class="method-start">184598 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">tearUp</span>
+                <span class="method-start">188011 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">check_blank_upload</span>
+                <span class="method-start">188247 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">190889 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization</span>
+                <span class="method-start">191077 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">tearUp</span>
+                <span class="method-start">194436 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">cancel_file_upld</span>
+                <span class="method-start">194684 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">198291 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization</span>
+                <span class="method-start">198444 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">tearUp</span>
+                <span class="method-start">201889 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">dwnload_csv</span>
+                <span class="method-start">202165 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">205743 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization</span>
+                <span class="method-start">205904 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">tearUp</span>
+                <span class="method-start">209257 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">edit_lrnr_crs</span>
+                <span class="method-start">209500 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">214986 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization</span>
+                <span class="method-start">215146 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">tearUp</span>
+                <span class="method-start">218606 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">edit_lrnr_proj</span>
+                <span class="method-start">218851 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">223878 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization</span>
+                <span class="method-start">224061 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">tearUp</span>
+                <span class="method-start">227415 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">delete_learner</span>
+                <span class="method-start">227647 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">231381 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization</span>
+                <span class="method-start">231541 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">tearUp</span>
+                <span class="method-start">234925 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">chk_previous_nav</span>
+                <span class="method-start">235144 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">238385 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization</span>
+                <span class="method-start">238562 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">tearUp</span>
+                <span class="method-start">241976 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">logout</span>
+                <span class="method-start">242276 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">244595 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ict.testcases.PlOfficer_TC</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization</span>
+                <span class="method-start">244744 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">tearUp</span>
+                <span class="method-start">248178 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">show_learners</span>
+                <span class="method-start">248441 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">251368 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization</span>
+                <span class="method-start">251539 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">tearUp</span>
+                <span class="method-start">254912 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">edit_lrnr_status</span>
+                <span class="method-start">255170 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">258587 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization</span>
+                <span class="method-start">258742 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">tearUp</span>
+                <span class="method-start">262044 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">edit_lrnr_stat_invalid</span>
+                <span class="method-start">262306 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">264655 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization</span>
+                <span class="method-start">264825 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">tearUp</span>
+                <span class="method-start">268233 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">check_previous_btn</span>
+                <span class="method-start">268500 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">272534 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization</span>
+                <span class="method-start">272710 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">tearUp</span>
+                <span class="method-start">276080 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">logout</span>
+                <span class="method-start">276336 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">284430 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ict.testcases.LoginTC</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">284641 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
